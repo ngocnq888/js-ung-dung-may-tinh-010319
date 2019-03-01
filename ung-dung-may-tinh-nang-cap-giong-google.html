@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Application</title>
+    <style>
+        .number{
+            width: 100px;
+            height: 30px;
+            background-color: #D4D4D4;
+            border: 2px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+
+        }
+        .number:hover {
+            background: #ff0000;
+            color: #fff;
+        }
+        .number1{
+            width: 50px;
+            height: 30px;
+            border: 2px;
+            background-color: #BFCAE6;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+        }
+        #result{
+            width: 350px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<h2 > Calculator Application</h2>
+<form >
+    <input id="result" >
+    <br/>
+    <br/>
+    <button type="button" id="7" class="number" onclick="clickm('7')">7</button>
+    <button type="button" id="8" class="number" onclick="clickm('8')">8</button>
+    <button type="button" id="9" class="number" onclick="clickm('9')">9</button>
+    <br/>
+    <br/>
+    <button type="button" id="4" class="number" onclick="clickm('4')">4</button>
+    <button type="button" id="5" class="number" onclick="clickm('5')">5</button>
+    <button type="button" id="6" class="number" onclick="clickm('6')">6</button>
+    <br/>
+    <br/>
+    <button type="button" id="1" class="number" onclick="clickm('1')">1</button>
+    <button type="button" id="2" class="number" onclick="clickm('2')">2</button>
+    <button type="button" id="3" class="number" onclick="clickm('3')">3</button>
+    <br/>
+    <br/>
+    <button type="button" id="0" class="number" onclick="clickm('0')">0</button>
+    <button type="button" id="addition" class="number1" onclick="clickm('+')">+</button>
+    <button type="button" id="subtraction" class="number1" onclick="clickm('-')">-</button>
+    <button type="button" id="multiplication" class="number1" onclick="clickm('*')" >*</button>
+    <button type="button" id="division" class="number1" onclick="clickm('/')">/</button>
+    <br/><br/>
+    <button type="button" id="submit" style="background-color: #FF0000" class="number" onclick="execute()">=</button>
+    <button type="reset" id="clear" style="background-color: #ECECEC" class="number" >Clear</button>
+</form>
+<script type="text/javascript" src="ung-dung-may-tinh-nang-cap.js"></script>
+</body>
+</html>
